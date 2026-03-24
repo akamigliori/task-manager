@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f1f5f8; /* O fundo super claro e limpo da sua foto */
+    color: #102a42; /* O azul marinho escuro dos textos */
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5rem; /* Letra bem grande */
+    letter-spacing: 2px; /* Espaço entre as letras */
+    margin-bottom: 30px;
+}
+
+#container-app {
+    text-align: center; /* Centraliza tudo como na sua imagem */
+    width: 100%;
+    max-width: 400px;
+}
+
+#input-texto {
+    padding: 12px;
+    border: 2px solid #102a42;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    background: transparent;
+    width: 60%; /* Não ocupa a linha toda */
+}
+
+#tarefas {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#tarefas li {
+    display: flex;
+    justify-content: space-between; /* Joga o texto para a esquerda e o botão para a direita */
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #bcccdc; /* Uma linha sutil separando as tarefas */
+    font-size: 1.2rem;
+    font-weight: bold;
+    animation: surgir 0.4s ease;
+}
+
+button {
+    background: transparent;
+    border: 2px solid #102a42; /* Borda escura */
+    color: #102a42;
+    padding: 8px 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase; /* Força letras maiúsculas */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #102a42;
+    color: white;
+}
+
+.btn-concluido {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    border-color: #008000; /* Borda verde, remetendo ao número verde da sua foto */
+    color: #008000;
+}
+
+.btn-concluido:hover {
+    background: #008000;
+    color: white;
+}
+
+.btn-remover {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    border-color: #dc3545;
+    color: #dc3545;
+    margin-left: 5px;
+}
+
+.btn-remover:hover {
+    background: #dc3545;
+    color: white;
+}
+
+.concluida span {
+    text-decoration: line-through;
+    color: #008000;
+}
+
+.concluida .btn-concluido {
+    display: none;
+}
+
+.saindo {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+@keyframes surgir {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
