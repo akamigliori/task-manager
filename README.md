@@ -43,7 +43,7 @@ Este projeto é open-source e pode ser usado livremente. Desenvolvido com dedica
 
 ## Demonstração
 
-[Link para demo ao vivo, se hospedado] (ex.: GitHub Pages)
+https://akamigliori.github.io/task-manager/
 
 ---
 
